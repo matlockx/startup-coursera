@@ -33,5 +33,11 @@ Next you need to change the path to your aws pem file. Mine is located in ~/.ssh
 #AWS
 vagrant up --provider=aws web
 
+Do not to forget
+
+vagrant destroy
+
+at the end of your session.
+
 #Virtualbox
 vagrant up local
