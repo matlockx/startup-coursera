@@ -13,7 +13,7 @@ Create a file with your aws credentials somewhere save on your HD with following
 	  		attr_accessor :secret_key 
 	 	 	def initialize()
 	    		@access_key = "access_key"  
-	  			@secret_key = "z+secret_key"
+	  			@secret_key = "secret_key"
 	  		end
 		end
 	end
