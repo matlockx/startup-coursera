@@ -31,13 +31,14 @@ Next you need to change the path to your aws pem file. Mine is located in ~/.ssh
 	override.ssh.private_key_path = "~/.ssh/matlockx-aws.pem" 
 
 #AWS
-vagrant up --provider=aws web
+	vagrant up --provider=aws web
 
 Do not to forget
 
-vagrant destroy
+	vagrant destroy
 
 at the end of your session.
 
 #Virtualbox
-vagrant up local
+
+	vagrant up local
