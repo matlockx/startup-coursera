@@ -1,6 +1,7 @@
 startup-coursera
 ================
 Vagrant setup to start an aws instance or a local virtual box instance with installed git, nodejs, python and heroku toolbelt.
+Can be used for coursera course 'startup': https://class.coursera.org/startup-001/class/index
 
 #Setup
 
