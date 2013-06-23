@@ -4,6 +4,8 @@ Vagrant setup to start an aws instance or a local virtual box instance with inst
 Can be used for coursera course 'startup': https://class.coursera.org/startup-001/class/index
 
 #Setup
+Install vagrant from http://www.vagrantup.com/
+Install vagrant aws plugin: https://github.com/mitchellh/vagrant-aws
 
 Create a file with your aws credentials somewhere save on your HD with following content:
 
