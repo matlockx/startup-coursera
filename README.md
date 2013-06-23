@@ -29,6 +29,12 @@ Change first line in vagrant file to point to the aws credential file. Mine is l
 Next you need to change the path to your aws pem file. Mine is located in ~/.ssh:
 
 	override.ssh.private_key_path = "~/.ssh/matlockx-aws.pem" 
+	
+Then change line
+
+	aws.keypair_name = "matlockx"
+
+and add your keypair name.
 
 #AWS
 	vagrant up --provider=aws web
