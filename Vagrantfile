@@ -5,14 +5,14 @@ Vagrant.configure("2") do |config|
         web_config.vm.box = "dummy"
         web_config.vm.box_url = "https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box"
 
-        web_config.vm.provider :aws do |aws|
+        web_config.vm.provider :aws do |aws,override|
           aws.access_key_id = aws_config.access_key
           aws.secret_access_key = aws_config.secret_key
           aws.keypair_name = "matlockx"
-          aws.ssh_private_key_path = "~/.ssh/matlockx-aws.pem"
+          override.ssh.username = "ubuntu"
+          override.ssh.private_key_path = "~/.ssh/matlockx-aws.pem"
 
           aws.ami = "ami-640a0610"
-          aws.ssh_username = "ubuntu"
           aws.region = "eu-west-1"
           aws.instance_type = "t1.micro"
         end
@@ -26,5 +26,5 @@ Vagrant.configure("2") do |config|
 
         end     
     end
-  
+  config.vm.provision :shell, :path => "setup.sh"
 end
